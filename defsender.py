@@ -32,7 +32,7 @@ def start():
     configs = config_js.read()
   configs = json.loads(configs)
 
-  text = text.replace("%website%", "https://boulderbugle.com/-133m2lwo")
+  text = text.replace("%website%", ".")
   text= text.replace("%friend_name%", friend_name.get())
   text = text.replace("%my_name%", configs["my_name"])
   
@@ -51,7 +51,7 @@ subject_field = customtkinter.CTkEntry(window, placeholder_text="")
 subject_field.insert(0, "") 
 subject_field.place(x=268, y=130)
 
-subject_field_label= customtkinter.CTkLabel(window, text="Введите тему ->", fg_color="transparent")
+subject_field_label= customtkinter.CTkLabel(window, text="Enter a topic ->", fg_color="transparent")
 subject_field_label.place(x=163, y=130)
 
 
@@ -64,34 +64,34 @@ friend_name.insert(0, "")
 friend_name.place(x=268, y=80)
 
 recipient_field_label = customtkinter.CTkLabel(window, text=
-                                              '''Введите имя получателя ->
-(Необязательно)
+                                              '''Enter the recipient's name ->
+(Optional)
                                                ''', fg_color="transparent")
 recipient_field_label.place(x=90, y=80)
 
 
 
 
-copyright = customtkinter.CTkLabel(window, text="Все права защищены Defsender 2024 ©", fg_color="transparent", font=('Times 30',11) )
+copyright = customtkinter.CTkLabel(window, text="All contents reserved Defsender 2025 ©", fg_color="transparent", font=('Times 30',11) )
 copyright.place(x=10, y=450)
 
-version = customtkinter.CTkLabel(window, text="Beta 2.1", fg_color="transparent", font=('Times 30',11) )
+version = customtkinter.CTkLabel(window, text="Beta 2.2", fg_color="transparent", font=('Times 30',11) )
 version.place(x=675, y=450)
 
-support = customtkinter.CTkLabel(window, text="Написать в поддержку - defsender@yandex.ru", fg_color="transparent", font=('Times 30',13) )
+support = customtkinter.CTkLabel(window, text="Find a bug? Write to - defsender@yandex.ru", fg_color="transparent", font=('Times 30',13) )
 support.place(x=220, y=200)
 
 
 def checkbox_event():
     print("Cогласие:", check_var.get())
 
-check_var = customtkinter.StringVar(value="Отклонено")
-checkbox = customtkinter.CTkCheckBox(window, text="Данные указаны верно", command=checkbox_event,
-                                     variable=check_var, onvalue="Принято", offvalue="Отклонено")
+check_var = customtkinter.StringVar(value="Denied.")
+checkbox = customtkinter.CTkCheckBox(window, text="All data is correct", command=checkbox_event,
+                                     variable=check_var, onvalue="Approved!", offvalue="Denied.")
 checkbox.place(x=250, y=230)
 
 
-button = customtkinter.CTkButton(master=window, text="Начать рассылку", command=start)
+button = customtkinter.CTkButton(master=window, text="Start", command=start)
 button.place(x=340,y=300, anchor=customtkinter.CENTER)
 
 
@@ -103,7 +103,7 @@ button.place(x=690 ,y=410, anchor=customtkinter.CENTER)
 
 logo = customtkinter.CTkLabel(window, text="DefSender", fg_color="transparent", font=('Times 30',35))
 logo.place(x=500, y=50)
-logo_description = customtkinter.CTkLabel(window, text="Приложение для рассылки", fg_color="transparent", font=('Times 30',15))
+logo_description = customtkinter.CTkLabel(window, text="Mailing application", fg_color="transparent", font=('Times 30',15))
 logo_description.place(x=490, y=90)
 
 
