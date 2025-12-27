@@ -8,43 +8,43 @@
 # ⚡ DefSender - the program for mass mailing
 DefSender - a program with simple and clear functionality, perfect for mass mailing of your ads to mailboxes!
 
-## ⚡ Установка
+## ⚡ Downloading
 In order to install the program, download the installer.exe file. In the window that opens, check all the boxes, thereby 
 agreeing to the User Agreement. After that, the installer will install the program on your PC, and you will be able to 
 use it!
 ![](mainmenu.png)
-## ⚡ Как настроить?
+## ⚡ How to setting?
 In order to properly configure the newsletter, you must **!!!** open the app and click on the **gear** icon, 
 which will open the settings menu. After that, you must **!!!** fill out the settings menu!
-### ⚡ Как заполнить настройки?
-**1.Ваша почта:** - в данное поле вы должны ввести свою почту, с которой будет происходить рассылка! **Важно!** - почта, которую 
-вы вводите, обязательно должна быть Яндекс.Почтой! Нет Яндекс.Почты? - создать можно [тут](https://360.yandex.ru/mail/)
+### ⚡ How to fill the settings?
+**1.Your email:** - in this field, you must enter your email address from which the mailing will take place! **Important!** - the mail that 
+you enter it, it must be Yandex.Mail! No Yandex.Mail? - you can create it [here](https://360.yandex.ru/mail /)
 
-**2.Пароль от почты:** - в данное поле вы должны ввести пароль от почты, который нужно получить по _данной_ инструкции.
+**2.Password of your email:** - In this field, you must enter the email password _that_ you received using the instructions provided.
 
-**3.Ваше имя:** - в данном поле введите ваше имя
+**3.Your name:** - Enter your name in this field.
 
-**Поздравляю! Настройки заполнены!**
+**Congratulations! Settings is filled!**
 
-### ⚡ Где вставить текст рассылки и почты, на которые будет производиться рассылка?
+### ⚡ Where should I insert the mailing text and the emails to which the mailing will be sent?
 
-**Куда добавить почты:** Почты,на которые должна производиться рассылка, вы должны вставить в файл **mails.json**, который вы скачали с **GitHub**!
-**Пример заполнения:** 
+**Where to add emails:** You must insert the emails to which the mailing should be sent into the **mails.json** file that you downloaded from **GitHub**!
+**Example of filling in:**
 ```
 ["mail.example.ru", "mail2.example.ru", "mail3.example.ru","mail4.example.ru","mail5.example.ru"]
 ```
-**(Добавлять почты вы можете до бесконечности)**
+**(You can add emails for infinity times)**
 
 
-**Куда добавить текст?:** Текст, который будет использован для рассылки, вы должны вставить в файл **text.txt**, который вы скачали с **GitHub**!
-**Пример заполнения:**
+**Where to add the text?:** You must insert the text that will be used for the mailing into the **text.txt** file that you downloaded from **GitHub**!
+**Example of filling:**
 ```
-Привет, %friend_name%!Я, %my_name% приглашаю тебя присоединиться к моему ТГК - @example!
-Там ты найдешь много интересного!
+Hi, %friend_name%! I, %my_name%, invite you to join my TGK - @example!
+There you will find a lot of interesting things!
 ```
-**Примечание!** 
-В тексте **%friend_name%** заменится на имя друга, а **%my_name%** на ваше имя!
-Вы можете это использовать , если захотите! **(Не обязательно!)**
+**Note!** 
+In the text, **%friend_name%** will be replaced with the friend's name, and **%my_name%** will be replaced with your name!
+You can use this if you wish! **(Not necessary!)**
 
 ## ⚡ Как получить [пароль](https://github.com/MiroshanToshan/Rassilka-mail-YANDEX-MAIL-/blob/main/README.md#как-заполнить-настройки) от почты?
 Чтобы получить пароль от почты, нужно 
