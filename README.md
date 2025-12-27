@@ -5,17 +5,17 @@
 </p>
 
 
-# ⚡ DefSender - программа для массовой рассылки
-DefSender - программа с простым и понятным функционалом, идеально подходящая для массовой рассылки вашей рекламы на почты!
+# ⚡ DefSender - the program for mass mailing
+DefSender - a program with simple and clear functionality, perfect for mass mailing of your ads to mailboxes!
 
 ## ⚡ Установка
-Для того, чтобы установить программу, скачайте файл installer.exe. В открывшемся окошке проставьте все галочки, тем самым 
-соглашаясь с Правилами пользовательского соглашения. После этого установщик сам установит программу на ваш ПК и вы сможете 
-ей пользоваться!
+In order to install the program, download the installer.exe file. In the window that opens, check all the boxes, thereby 
+agreeing to the User Agreement. After that, the installer will install the program on your PC, and you will be able to 
+use it!
 ![](mainmenu.png)
 ## ⚡ Как настроить?
-Для того, чтобы правильно настроить рассылку, нужно **обязательно** открыть приложение, и в нём кликнуть на иконку **шестерёнки**, 
-тем самым открыв меню настроек. После этого меню настроек нужно **обязательно** заполнить! 
+In order to properly configure the newsletter, you must **!!!** open the app and click on the **gear** icon, 
+which will open the settings menu. After that, you must **!!!** fill out the settings menu!
 ### ⚡ Как заполнить настройки?
 **1.Ваша почта:** - в данное поле вы должны ввести свою почту, с которой будет происходить рассылка! **Важно!** - почта, которую 
 вы вводите, обязательно должна быть Яндекс.Почтой! Нет Яндекс.Почты? - создать можно [тут](https://360.yandex.ru/mail/)
