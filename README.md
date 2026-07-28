@@ -1,79 +1,111 @@
-
-
 <p align="center">
 <img src="https://github.com/MiroshanToshan/Rassilka-mail-YANDEX-MAIL-/blob/main/images/logo.png" style="width:30%"/>
 </p>
 
+# ⚡ DefSender - программа для массовой email-рассылки
 
-# ⚡ DefSender - the program for mass mailing
-DefSender - a program with simple and clear functionality, perfect for mass mailing of your ads to mailboxes!
+DefSender - программа с простым и понятным интерфейсом, предназначенная для массовой отправки писем на электронную почту.
 
-## ⚡ Downloading
-In order to install the program, download the installer.exe file. In the window that opens, check all the boxes, thereby 
-agreeing to the User Agreement. After that, the installer will install the program on your PC, and you will be able to 
-use it!
-![](mainmenu.png)
-## ⚡ How to setting?
-In order to properly configure the newsletter, you must **!!!** open the app and click on the **gear** icon, 
-which will open the settings menu. After that, you must **!!!** fill out the settings menu!
-### ⚡ How to fill the settings?
-**1.Your email:** - in this field, you must enter your email address from which the mailing will take place! **Important!** - the mail that 
-you enter it, it must be Yandex.Mail! No Yandex.Mail? - you can create it [here](https://360.yandex.ru/mail /)
+## 🛜 Установка
 
-**2.Password of your email:** - In this field, you must enter the email password _that_ you received using the instructions provided.
+Чтобы установить программу, скачайте файл `installer.exe` и запустите его.
 
-**3.Your name:** - Enter your name in this field.
+В открывшемся окне примите условия Пользовательского соглашения и следуйте инструкциям установщика. После завершения установки DefSender будет готов к работе.
 
-**Congratulations! Settings is filled!**
+![Главное меню](mainmenu.png)
 
-### ⚡ Where should I insert the mailing text and the emails to which the mailing will be sent?
+## ⚙️ Настройка программы
 
-**Where to add emails:** You must insert the emails to which the mailing should be sent into the **mails.json** file that you downloaded from **GitHub**!
-**Example of filling in:**
+Перед запуском рассылки откройте приложение и нажмите на значок **шестерёнки**. Откроется меню настроек, в котором необходимо заполнить данные отправителя.
+
+### 📝 Как заполнить настройки?
+
+**1. Ваша электронная почта**
+
+Укажите адрес электронной почты, с которого будут отправляться письма.
+
+> **Важно:** программа предназначена для работы с Яндекс Почтой. Создать почтовый ящик можно на сайте [Яндекс 360](https://360.yandex.ru/mail/).
+
+**2. Пароль от электронной почты**
+
+Введите специальный пароль приложения, созданный в настройках аккаунта Яндекса. Инструкция по его получению находится ниже.
+
+**3. Ваше имя**
+
+Укажите имя отправителя. Его можно использовать в тексте письма с помощью переменной `%my_name%`.
+
+После заполнения всех полей нажмите кнопку **«Сохранить настройки»**.
+
+## 🧔‍♂️ Куда добавить адреса получателей и текст письма?
+
+### Адреса получателей
+
+Добавьте адреса электронной почты получателей в файл `mails.json`, скачанный вместе с программой.
+
+Пример заполнения:
+
+```json
+[
+  "mail1@example.ru",
+  "mail2@example.ru",
+  "mail3@example.ru",
+  "mail4@example.ru",
+  "mail5@example.ru"
+]
 ```
-["mail.example.ru", "mail2.example.ru", "mail3.example.ru","mail4.example.ru","mail5.example.ru"]
+
+В список можно добавить необходимое количество адресов. Следите за правильностью JSON-формата: адреса должны находиться в кавычках и разделяться запятыми.
+
+### Текст письма
+
+Текст рассылки необходимо добавить в файл `text.txt`.
+
+Пример:
+
+```text
+Привет, %friend_name%!
+
+Я, %my_name%, приглашаю тебя присоединиться к моему Telegram-каналу — @example!
+
+Там ты найдёшь много интересного!
 ```
-**(You can add emails for infinity times)**
 
+В тексте можно использовать следующие переменные:
 
-**Where to add the text?:** You must insert the text that will be used for the mailing into the **text.txt** file that you downloaded from **GitHub**!
-**Example of filling:**
-```
-Hi, %friend_name%! I, %my_name%, invite you to join my TGK - @example!
-There you will find a lot of interesting things!
-```
-**Note!** 
-In the text, **%friend_name%** will be replaced with the friend's name, and **%my_name%** will be replaced with your name!
-You can use this if you wish! **(Not necessary!)**
+- `%friend_name%` — будет заменена именем получателя;
+- `%my_name%` — будет заменена именем, указанным в настройках DefSender.
 
-## ⚡ Как получить [пароль](https://github.com/MiroshanToshan/Rassilka-mail-YANDEX-MAIL-/blob/main/README.md#как-заполнить-настройки) от почты?
-Чтобы получить пароль от почты, нужно 
+Использование переменных необязательно.
 
-**1.** Зайти на свою [Яндекс.Почту](https://360.yandex.ru/mail/)
+## 🔑 Как получить пароль приложения для Яндекс Почты?
 
-**2.** Зайти в настройки (Иконка шестерёнки)
+Для работы DefSender рекомендуется использовать отдельный пароль приложения, а не основной пароль от аккаунта.
 
-**3.** В открывшемся окне настроек в верхнем правом углу нажать ***Все настройки***.
+1. Откройте [Яндекс Почту](https://360.yandex.ru/mail/).
+2. Перейдите в настройки, нажав на значок шестерёнки.
+3. В открывшемся меню выберите **«Все настройки»**.
+4. Откройте раздел **«Почтовые программы»**, а затем перейдите к настройкам безопасности.
+5. Найдите раздел **«Пароли приложений»**.
+6. При необходимости разрешите доступ почтовым программам и использование паролей приложений.
+7. Создайте новый пароль приложения для почты, следуя инструкциям Яндекса.
+8. Скопируйте полученный пароль и вставьте его в соответствующее поле настроек DefSender.
 
-**4.** Выбрать ***Почтовые программы*** и нажать на сообщение-ссылку - ***Безопасность***
+> Никому не передавайте основной пароль от своего аккаунта. Для сторонних почтовых программ используйте только отдельные пароли приложений.
 
-**5.** Пролистать вниз и выбрать ***Пароли приложений***
+## 🚀 Как запустить рассылку?
 
-**6.** Поставить галочки на ***С сервера imap.yandex.ru по протоколу IMAP*** и на галочку ***Пароли приложений и OAuth-токены***
+Перед запуском убедитесь, что:
 
-**7** Нажать на ***Пароли приложений*** и найти вкладочку ***Почта*** по середине окна. Нажмите на ***+*** и создайте пароль по инструкции ***Яндекса***.
-Полученный пароль и вставьте в настройки ***DefSender!***
+- данные отправителя заполнены и сохранены;
+- файл `mails.json` содержит адреса получателей;
+- файл `text.txt` содержит текст письма;
+- в поле **«Тема»** указана тема рассылки.
 
-## ⚡ Как запустить рассылку?
+После этого вернитесь в главное меню и нажмите кнопку **«Запустить рассылку»**. Программа начнёт отправку писем по указанным адресам.
 
-Чтобы запустить рассылку, после того как вы заполнили настройки, нажмите **Сохранить настройки** и перейдите в главное меню (Окно настроек можете закрыть)!
-Запишите в поле **Тема** тему вашей рассылки, после того как готовы - нажмите **Запустить рассылку**!
-**В течении не более 1 минуты все письма отправятся!**
+Время выполнения зависит от количества получателей, скорости подключения и ограничений почтового сервиса.
 
 <p align="center">
 <img src="https://github.com/MiroshanToshan/Rassilka-mail-YANDEX-MAIL-/blob/main/images/mainmenu.png" style="width:50%"/>
 </p>
 
-## ⚡ Хочешь поддержать приложение чтобы оно стало лучше?
-
-Ты можешь поддержать приложение тут - **cooming soon**
